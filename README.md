@@ -10,7 +10,7 @@
 ```
 ## 3.docker push image to you hub
 ```
-      docker push youhub/library/kube-zookeeper:3.7.0-2
+      docker push youhub.com/library/kube-zookeeper:3.7.0-2
 ```
 ## 4.modify repository from zk.yml
 

@@ -70,7 +70,7 @@ spec:
       containers:
       - name: kubernetes-zookeeper
         imagePullPolicy: IfNotPresent
-        image: "harbor.yehangfan.com/library/kube-zookeeper:3.6.1"
+        image: "harbor.yehangfan.com/library/kube-zookeeper:3.7.0"
         resources:
           requests:
             memory: "1Gi"

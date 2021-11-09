@@ -1,6 +1,8 @@
 # zookeeper 3.7.0 on k8s
 
 ## 1.build docker images from Dokcerfile
+[jdk download page](https://adoptium.net/releases.html?variant=openjdk11&jvmVariant=hotspot)
+     download a jdk which you choose, unzip it,and relpace jdk in Dockerfile.
 ```
       docker build /buildPath -f -t -t kube-zookeeper:3.7.0-2
 ```
@@ -46,5 +48,5 @@ spec:
 ```
 ## 6.working on k8s
 ```bash
-kubectl apply -f zk.yml
+   kubectl apply -f zk.yml
 ```

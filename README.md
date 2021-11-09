@@ -1,2 +1,2 @@
-# zookeeper 3.6.1 on k8s
+# zookeeper 3.7.0 on k8s
 

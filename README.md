@@ -15,6 +15,11 @@
       docker push youhub.com/library/kube-zookeeper:3.7.0-2
 ```
 ## 4.modify repository from zk.yml
+```
+-         image: harbor.yehangfan.com/library/kube-zookeeper:3.7.0-2
+174	+         image: youhub.com/library/kube-zookeeper:3.7.0-2
+
+```
 
 ## 5.create pv reference pvc
  create  user zookeeper and directory on you k8s work node 

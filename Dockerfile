@@ -14,7 +14,7 @@ RUN set -x export DEBIAN_FRONTEND=noninteractive
 RUN apt-get -y  install tzdata netcat-openbsd net-tools
 RUN  ln -sf /usr/share/zoneinfo/Asia/Shanghai  /etc/localtime && echo "Asia/Shanghai" > /etc/timezone
 RUN groupadd -g 1002 zookeeper && useradd  zookeeper -u 1002 -g zookeeper 
-RUN echo "yehangfan\nyehangfan" | passwd  -q root
-RUN echo "yehangfan\nyehangfan" | passwd  -q zookeeper
+RUN echo "password\npassword" | passwd  -q root
+RUN echo "password\npassword" | passwd  -q zookeeper
 COPY --chown=zookeeper:zookeeper zookeeper /opt/zookeeper/
 RUN chmod +x /opt/zookeeper/bin/* && mkdir -p /var/log/zookeeper && chown -R zookeeper:zookeeper /var/log/zookeeper && ln -snf /opt/zookeeper/bin/* /usr/bin/

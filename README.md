@@ -17,7 +17,7 @@
 ## 4.modify repository from zk.yml
 ```
 -         image: harbor.yehangfan.com/library/kube-zookeeper:3.7.0-2
-174	+         image: youhub.com/library/kube-zookeeper:3.7.0-2
++         image: youhub.com/library/kube-zookeeper:3.7.0-2
 
 ```
 
